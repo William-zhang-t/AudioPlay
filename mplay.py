@@ -48,15 +48,9 @@ class MyWidget(QWidget):
         self.wavs = []
         self.fname_text = {}
 
-        # filename, _ = QFileDialog.getOpenFileName(self)
-        # fr = open(filename, 'r')
-        # for line in fr.readlines():
-        # 	self.wavs.append(line.strip("\n"))
-        # pprint(self.wavs)
         dr = QFileDialog.getExistingDirectory(self)
         for f in glob.iglob(dr+'\\*.wav'):
             self.wavs.append(f)
-        # pprint(self.wavs)
 
         for f in glob.iglob(dr+'\\*.txt'):
             fname = f.split('\\')[-1].split('.')[0]
