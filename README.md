@@ -1,9 +1,9 @@
 # AudioPlay
 A python code for playing audio and exporting audio time nodes
 
-1.Configure Environment
- (1)python  
- (2)pip install PyQt5
+(1)Configure Environment
+ python  
+ pip install PyQt5
 
-2.run
+(2)run code
 python mplay.py
